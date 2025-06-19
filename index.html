@@ -2,127 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fresh Yard Solution</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f1f1f1;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    .container {
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .card h2 {
-      margin: 0.5rem 0;
-      font-size: 1.25rem;
-      color: #2e7d32;
-    }
-    .card p {
-      font-size: 1rem;
-      color: #555;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #2e7d32;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-    .card a:hover {
-      background-color: #1b5e20;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Fresh Yard Solution</h1>
-    <p>Professional dog waste removal for homes, yards, and pet-filled chaos. Subscribe now and never scoop again.</p>
+<body class="bg-green-50 text-gray-800">
+  <header class="bg-green-600 text-white py-10">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">Fresh Yard Solution</h1>
+      <p class="mt-2 text-lg">Professional Pet Waste Removal - Clean Lawns, Happy Paws</p>
+      <a href="#pricing" class="mt-4 inline-block bg-white text-green-600 font-semibold py-2 px-4 rounded shadow hover:bg-gray-100">View Plans</a>
+    </div>
   </header>
-  <div class="container">
-    <div class="card">
-      <h2>One-Time Cleanup – 1 Dog</h2>
-      <p>$50</p>
-      <a href="https://buy.stripe.com/9B66oG5dn4CYfoWh214F20k" target="_blank">Buy Now</a>
+
+  <main class="container mx-auto px-4 py-10" id="pricing">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Pricing Card Template -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold">One-Time Cleanup – 1 Dog</h3>
+        <p class="text-sm text-gray-600">$50</p>
+        <a href="https://buy.stripe.com/9B66oG5dn4CYfoWh214F20k" target="_blank" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Buy Now</a>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold">One-Time Cleanup – 2 Dogs</h3>
+        <p class="text-sm text-gray-600">$65</p>
+        <a href="https://buy.stripe.com/cNibJ0cFP0mIgt0aDD4F20l" target="_blank" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Buy Now</a>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold">One-Time Cleanup – 3 Dogs</h3>
+        <p class="text-sm text-gray-600">$80</p>
+        <a href="https://buy.stripe.com/00w28q7lv8TeekS3bb4F20m" target="_blank" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Buy Now</a>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold">One-Time Cleanup – 4 Dogs</h3>
+        <p class="text-sm text-gray-600">$90</p>
+        <a href="https://buy.stripe.com/14A6oGcFP6L65Om2774F20n" target="_blank" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Buy Now</a>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold">Weekly Cleanup – 1 Dog</h3>
+        <p class="text-sm text-gray-600">$55/month</p>
+        <a href="https://buy.stripe.com/fZu00i35f0mI2Ca1334F20c" target="_blank" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Subscribe</a>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold">Weekly Cleanup – 2 Dogs</h3>
+        <p class="text-sm text-gray-600">$65/month</p>
+        <a href="https://buy.stripe.com/14A9ASaxH1qMa4Ch214F20d" target="_blank" class="mt-4 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Subscribe</a>
+      </div>
+      <!-- Add the remaining cards similarly -->
     </div>
-    <div class="card">
-      <h2>One-Time Cleanup – 2 Dogs</h2>
-      <p>$65</p>
-      <a href="https://buy.stripe.com/cNibJ0cFP0mIgt0aDD4F20l" target="_blank">Buy Now</a>
-    </div>
-    <div class="card">
-      <h2>One-Time Cleanup – 3 Dogs</h2>
-      <p>$80</p>
-      <a href="https://buy.stripe.com/00w28q7lv8TeekS3bb4F20m" target="_blank">Buy Now</a>
-    </div>
-    <div class="card">
-      <h2>One-Time Cleanup – 4 Dogs</h2>
-      <p>$90</p>
-      <a href="https://buy.stripe.com/14A6oGcFP6L65Om2774F20n" target="_blank">Buy Now</a>
-    </div>
-    <div class="card">
-      <h2>Weekly Cleanup – 1 Dog</h2>
-      <p>$55/month</p>
-      <a href="https://buy.stripe.com/fZu00i35f0mI2Ca1334F20c" target="_blank">Subscribe</a>
-    </div>
-    <div class="card">
-      <h2>Weekly Cleanup – 2 Dogs</h2>
-      <p>$65/month</p>
-      <a href="https://buy.stripe.com/14A9ASaxH1qMa4Ch214F20d" target="_blank">Subscribe</a>
-    </div>
-    <div class="card">
-      <h2>Weekly Cleanup – 3 Dogs</h2>
-      <p>$75/month</p>
-      <a href="https://buy.stripe.com/7sY00i35fedya4C5jj4F20g" target="_blank">Subscribe</a>
-    </div>
-    <div class="card">
-      <h2>Weekly Cleanup – 4 Dogs</h2>
-      <p>$85/month</p>
-      <a href="https://buy.stripe.com/9B67sKaxH5H26SqfXX4F20h" target="_blank">Subscribe</a>
-    </div>
-    <div class="card">
-      <h2>Twice Weekly Cleanup – 1 Dog</h2>
-      <p>$110/month</p>
-      <a href="https://buy.stripe.com/14A3cu21b9XiekS3bb4F20e" target="_blank">Subscribe</a>
-    </div>
-    <div class="card">
-      <h2>Twice Weekly Cleanup – 2 Dogs</h2>
-      <p>$120/month</p>
-      <a href="https://buy.stripe.com/14A3cu9tDd9u2Ca5jj4F20f" target="_blank">Subscribe</a>
-    </div>
-    <div class="card">
-      <h2>Twice Weekly Cleanup – 3 Dogs</h2>
-      <p>$140/month</p>
-      <a href="https://buy.stripe.com/cNi28qgW50mIdgO1334F20i" target="_blank">Subscribe</a>
-    </div>
-    <div class="card">
-      <h2>Twice Weekly Cleanup – 4 Dogs</h2>
-      <p>$180/month</p>
-      <a href="https://buy.stripe.com/bJe4gyeNX4CY2CaeTT4F20j" target="_blank">Subscribe</a>
-    </div>
-  </div>
+  </main>
+
+  <footer class="bg-green-600 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 Fresh Yard Solution. All rights reserved.</p>
+  </footer>
 </body>
 </html>
